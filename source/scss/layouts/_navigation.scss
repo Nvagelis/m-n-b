@@ -1,0 +1,75 @@
+.main-header{
+    position: relative;
+    background-color: $cream;
+    border-top: 8px solid $brown;
+    border-bottom: 1px solid $dark-ceam;
+    .logo{
+        background-image: url('../images/logo.png');
+        @include size(106px, 107px);
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%,0);
+        z-index: 2;
+    }
+}
+.main-navigation{
+    margin-bottom: 0;
+    @media (min-width: $screen-sm){
+        margin-bottom: 5px;
+    }
+    .icon-bar{
+        background-color: $brown;
+    }
+}
+
+.main-nav{
+    text-align: center;
+    margin-top:40px;
+    @media (min-width: $screen-sm){
+        margin-top: 0;
+    }
+    >li{
+        display: block;
+        border-bottom: 1px solid $menu-link-color;
+        @media (min-width: $screen-sm){
+            display: inline-block;
+            border-bottom: 1px solid transparent;
+        }
+        line-height: 50px;
+        &:nth-child(3){
+            padding-right: 0;
+            @media (min-width: $screen-sm){
+                padding-right: 80px;
+            }
+        }
+        &:nth-child(4){
+            padding-right: 0;
+            @media (min-width: $screen-sm){
+                padding-left: 80px;
+            }
+        }
+        &:last-child{
+            border-bottom: 1px solid transparent;
+        }
+        >a{
+            padding: 0px 16px;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: $menu-link-color;
+            letter-spacing: 1px;
+            @media (min-width: $screen-md){
+                padding: 0px 25px;
+                font-size: 24px;
+            }
+            &:hover,
+            &:focus{
+                color: $link-color;
+            }
+        }
+        &.active a{
+            color: $link-color;
+        }
+    }
+}

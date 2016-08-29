@@ -1,0 +1,46 @@
+.services-head{
+    @include dark-background($head-bg);
+}
+.services-bg, .secontary-bg{
+    @extend .latest-bg;
+}
+   
+.process-box{
+    .bg-img{
+        background-image: url('../images/services/process.png');
+        background-repeat: no-repeat;
+        height: 180px;
+        margin-bottom: 20px;
+    }
+}
+@include background-position('.process-box', '.bg-img');
+
+.process{
+    width: 160px;
+    margin: 0 auto 15px;
+    position: relative;
+    text-align: center;
+    &:after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 3px;
+        top: 176px;
+        left: 25%;
+        background-color: $body-bg;
+    }
+    h3{
+        margin: 20px 0;
+        font-size: 34px;
+        letter-spacing: 2px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            padding: 2px 0;
+        }
+    }
+}

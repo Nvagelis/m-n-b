@@ -1,0 +1,25 @@
+%footer-line{
+    content: "";
+    width: 30px;
+    height: 1px;
+    background-color: $white;
+    position: absolute;
+    top: 50%;
+    @media (min-width: $screen-sm){
+        width: 50px;
+    }
+}
+
+%background-image{
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+%dark-background{
+    .title{
+        padding: 65px 0;
+    }
+    h2{
+        font-size: 62px;
+    }
+}

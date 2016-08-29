@@ -1,0 +1,9 @@
+.blog-head{
+    @include dark-background($head-bg);
+}
+.blog-bg{
+    background-color: $blog-bg;
+}
+.post{
+    margin-bottom: 50px;
+}

@@ -1,0 +1,52 @@
+@mixin responsive-font-size($sm, $md, $lg){
+    font-size: $sm;
+    @media (min-width: $screen-sm){
+        font-size: $md;
+    }
+    @media (min-width: $screen-md){
+        font-size: $lg;
+    }
+}
+
+@mixin responsive-padding($sm, $md){ 
+    @media (min-width: $screen-sm){
+        padding: $sm 0;
+    }
+    @media (min-width: $screen-md){
+        padding: $md 0;
+    }
+}
+
+
+@mixin responsive-height($xs, $sm, $md){
+    height: $xs;
+    @media (min-width: $screen-sm){
+        height: $sm;
+    }
+    @media (min-width: $screen-md){
+        height: $md;
+    }
+}
+@mixin background-image($bg-color, $path){
+    @extend %background-image;
+    background-color: $bg-color;
+    background-image: $path;
+}
+
+@mixin dark-background($bg-color){
+    @extend %dark-background;
+    background-color: $bg-color;
+    
+}
+
+@mixin background-position($parent, $child){
+    @for $i from 0 to 5{
+        $pos: ($i * 240px);
+        #{$parent}:nth-child(#{$i+1}){
+            #{$child}{
+                background-position: -$pos 0;
+            }
+        }  
+    }
+}
+

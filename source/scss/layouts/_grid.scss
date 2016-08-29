@@ -1,0 +1,65 @@
+.wrap{
+    @include make-row();
+}
+
+//home -- index
+.service-box{
+    @include make-sm-column(4);
+}
+.wrap-inner{
+    @include make-sm-column(12);
+}
+
+//about
+.about-box{
+    @include make-sm-column(6);
+}
+
+.person{
+    @include make-xs-column(6,0);
+    @include make-sm-column(3,0);
+/*    @media (max-width: $screen-sm ){
+        &:nth-child(2n+3){
+            clear:left;
+        }
+    }*/
+}
+
+//services
+.process-box{
+    &:nth-child(1){
+        @include make-md-column-offset(1);
+    }
+    @include make-xs-column(6);
+    @include make-sm-column(4);
+    @include make-md-column(2);
+    
+    @media (min-width: $screen-sm) and (max-width: $screen-sm-max){
+        &:nth-child(3n+4){
+            clear:left;
+        }
+    }
+    @media (max-width: $screen-sm ){
+        &:nth-child(2n+3){
+            clear:left;
+        }
+    }
+}
+
+//careers
+.carrers-box{
+    @include make-md-column(6);
+}
+
+//footer grid
+.footer-box{
+    @include make-sm-column(3);
+}
+
+//contact
+.con-info{
+    @include make-sm-column(4);
+}
+.form-col{
+    @include make-sm-column(6);
+}

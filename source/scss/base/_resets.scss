@@ -1,0 +1,13 @@
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a{
+    &:hover,
+    &:active,
+    &:focus{
+       outline: 0 !important; 
+    }
+}

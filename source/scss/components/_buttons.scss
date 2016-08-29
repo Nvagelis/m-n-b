@@ -1,0 +1,18 @@
+.view-all{
+    @extend .btn;
+    @extend .btn-lg;
+    @include button-variant($white, $link-color, $link-color);
+    padding: 20px 40px;
+    font-weight: 700;
+    .glyphicon{
+        top: 4px;
+    }
+}
+.poster-btn{
+    @extend .view-all;
+    margin-top: 30px;
+}
+.sub-button{
+    @extend .view-all;
+    margin-top: 60px;
+}

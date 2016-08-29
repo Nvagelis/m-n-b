@@ -1,0 +1,7 @@
+.about-head{
+    @include background-image($body-bg, url(../images/about/about-bg.jpg));
+    @include responsive-height(295px, 395px, 495px);
+}
+.about-bg{
+    @extend .latest-bg;
+}

@@ -1,0 +1,26 @@
+nav[aria-label="Page navigation"]{
+    text-align: center;
+}
+.pagination{
+    >li{
+        display: inline-block;
+        >a{
+            border-radius: 50%;
+            border: 1px solid $link-color;
+            padding: 6px 14px;
+            margin: 0 2px;
+            &:hover{
+                color: $white;
+                background-color: $link-color;
+            }
+        }
+        &:first-child > a{
+            border-radius: 50%;
+        }
+        &:last-child > a{
+            border-radius: 50%;
+        }
+    }
+    
+}
+

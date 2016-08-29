@@ -1,0 +1,23 @@
+form{
+    .form-group{
+        margin-bottom: 5px;
+    }
+    .form-control{
+        font-size: 24px;
+        height: 50px;
+    }
+    label{
+        font-size: 14px;
+        font-weight: 300;        
+        letter-spacing: 2px;
+    }
+    textarea.form-control{
+        height: auto;
+    }
+}
+.form-group.required{
+    label:after{
+        content: "*";
+        color: red;
+    }
+}

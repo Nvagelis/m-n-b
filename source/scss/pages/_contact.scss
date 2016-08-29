@@ -1,0 +1,32 @@
+.contact-head{
+    @include background-image($body-bg, url('../images/contact.jpg'));
+    @include responsive-height(295px, 395px, 495px);
+}
+.contact-bg{
+    background-color: $blog-bg;
+}
+.map{
+    @include  background-image($body-bg, url('../images/map.jpg'));
+    @include responsive-height(295px, 395px, 495px);
+}
+
+.form-bg{
+    @extend .openings-bg;
+}
+.cont-box{
+    margin-bottom: 30px;
+    h3{
+        font-size: 36px;
+        text-transform: uppercase;
+        letter-spacing: -1px;
+        margin-bottom: 10px;
+    }
+    p{
+        letter-spacing: 2px;
+    }
+    a.more-link{
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding: 5px 20px 5px 0;
+    }
+}
